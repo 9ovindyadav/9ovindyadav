@@ -2,6 +2,7 @@
     padding: 3em 6em;
     @media (max-width:900px) {
         padding: 1em;
+        width: 100%;
     }
     .intro{
         display: flex;
@@ -80,5 +81,83 @@
                 object-fit: cover;
             }
         }
+    }
+
+
+    .about{
+        margin: 10em 0;
+    
+        @media (max-width:900px) {
+            margin: 5em 0;
+        }
+        h1,p{ text-align: center;}
+        .my-intro{color: var(--text-c-grey); margin-top: 0.5em;}
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: start; 
+            margin: 3em 10em;
+            @media (max-width:900px){
+                flex-direction: column;
+                align-items: center;
+                margin: 4em 0 ;
+            }
+            img{
+                width: 40%;
+                object-fit: contain;
+                @media (max-width:900px){
+                    width: 70%;
+                }
+            }
+            .text{
+                width: 50%;
+                @media (max-width:900px) {
+                    width: 70%;
+                    margin-top: 3em;
+                }
+                p{
+                    text-align: left;
+                    line-height: 1.5;
+                }
+                .expe{
+                    display: flex;
+                    margin: 3em 0;
+            
+                   p,h3{
+                    text-align: center;
+                    margin: 0.5em 0;
+                   }
+                   h3{
+                    font-size: 1.5em;
+                    font-weight: 600;
+                   }
+                   p{
+                    color: var(--text-c-grey);
+                   }
+                }
+
+                button{
+                    background-color: var(--text-c-active);
+                    font-size: 1em;
+                    font-weight: 600;
+                    padding: 1em 1.5em;
+                    border: none;
+                    outline: none;
+                    border-radius: 0.5em;
+                    color: var(--text-color);
+                    border-bottom: 2px solid var(--text-c-grey);
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    svg{
+                      font-size: 1.5em;
+                    }
+                }
+                button:active{
+                    transform: translateY(2px);
+                }
+            }
+        }
+       
     }
 }
