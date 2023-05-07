@@ -1,12 +1,14 @@
 import {GrLinkedinOption} from "react-icons/gr"
 import {BsGithub} from "react-icons/bs"
-import {FaTelegramPlane, FaReact,FaHtml5, FaNodeJs, FaSass} from "react-icons/fa"
+import {FaTelegramPlane, FaReact,FaHtml5, FaNodeJs, FaSass, FaGraduationCap} from "react-icons/fa"
 import {SiJavascript, SiCss3, SiMongodb, SiFirebase} from "react-icons/si"
 import {AiOutlineDownload} from "react-icons/ai"
+import {MdWork, MdOutlineDateRange} from "react-icons/md";
 import Photo from "../assets/govind.png"
 import AboutPhoto from "../assets/about.jpg"
 import Resume from "../assets/resume.pdf"
 import "../scss/home.scss"
+import { useState } from "react"
 
 export const Home = () => {
   return (
@@ -31,6 +33,7 @@ export const Home = () => {
 
       <About />
       <Skills />
+      <Qualification />
     </div>
   )
 }
@@ -108,5 +111,121 @@ const Skills = ()=>{
         </div>
        </div>
     </div>
+  )
+}
+
+
+const Qualification = ()=>{
+
+  const [show,setShow] = useState(1);
+  return(
+    <div className="qf">
+      <h1>Qualification</h1>
+      <p>My personal journey</p>
+      <div className="data">
+        <div className="btn">
+        <button onClick={()=>setShow(1)}><MdWork /> Work</button>
+        <button onClick={()=>setShow(2)}><FaGraduationCap /> Education</button>
+        </div>
+         <QualificationData show={show}/>
+      </div>
+    </div>
+  )
+}
+
+function QualificationData({ show }) {
+  return (
+    <>
+      {show === 1 && (
+        <div className="work">
+          <DataQueLeft position={"Sales Executive"} company={"Sterling Solutions"} year={"2019"} />
+          <DataQueRight position={"DEO & Pro-coord"} company={"P5L"} year={"2020-2022"} />
+          <DataQueLeft position={"Digital Marketing"} company={"Sanskar Sarees"} year={"2022"} />
+          <DataQueRightLast position={"DEO"} company={"BRFL"} year={"2022-2023"} />
+        </div>
+      )}
+      {show === 2 && (
+        <div className="education">
+          <DataQueLeft position={"10th"} company={"Pal Rajendra"} year={"2014-2015"} />
+          <DataQueRightLast position={"HSC, Science"} company={"Shree Raghuveer"} year={"2015-2017"} />
+        </div>
+      )}
+    </>
+  );
+}
+
+const DataQueLeft = ({position,company,year})=>{
+
+  return(
+    <div className="qua-data">
+    <div className="data-1">
+      <h3>{position}</h3>
+      <p>{company}</p>
+      <p className="year"><MdOutlineDateRange /> {year}</p>
+    </div>
+    <div className="middle">
+    <div className="ball"></div>
+    <div className="line"></div>
+    </div>
+    <div className="data-2">
+    </div>
+  </div>
+  )
+}
+
+const DataQueRight = ({position,company,year})=>{
+
+  return(
+    <div className="qua-data">
+    <div className="data-1">
+      
+    </div>
+    <div className="middle">
+    <div className="ball"></div>
+    <div className="line"></div>
+    </div>
+    <div className="data-2">
+    <h3>{position}</h3>
+      <p>{company}</p>
+      <p className="year"><MdOutlineDateRange /> {year}</p>
+    </div>
+  </div>
+  )
+}
+
+const DataQueLeftLast = ({position,company,year})=>{
+
+  return(
+    <div className="qua-data">
+    <div className="data-1">
+      <h3>{position}</h3>
+      <p>{company}</p>
+      <p className="year"><MdOutlineDateRange /> {year}</p>
+    </div>
+    <div className="middle">
+    <div className="ball"></div>
+    </div>
+    <div className="data-2">
+    </div>
+  </div>
+  )
+}
+
+const DataQueRightLast = ({position,company,year})=>{
+
+  return(
+    <div className="qua-data">
+    <div className="data-1">
+      
+    </div>
+    <div className="middle">
+    <div className="ball"></div>
+    </div>
+    <div className="data-2">
+    <h3>{position}</h3>
+      <p>{company}</p>
+      <p className="year"><MdOutlineDateRange /> {year}</p>
+    </div>
+  </div>
   )
 }
