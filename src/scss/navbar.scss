@@ -1,16 +1,8 @@
-:root{
-    --text-color: white;
-    --text-c-active : #4f368f ;
-    --bg-color : #1d1829 ;
-    --bg-c-active : #2c2245 ;
-}
-
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 4em;
-    border: 1px solid wheat;
     @media  (max-width:900px) {
         padding: 1.5em;
      }
@@ -30,13 +22,14 @@
             font-size: 1.2em;
             font-weight: 600;
             padding: 1em;
+            color: var(--text-color);
         }
-        a:hover{
+        a:hover,:active{
             color: var(--text-c-active);
             
         }
-        a:active{
-            color: var(--text-c-active);
-        }
+    }
+    .mobile{
+        display: none;
     }
 }

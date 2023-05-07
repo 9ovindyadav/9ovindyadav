@@ -1,0 +1,83 @@
+.container{
+    padding: 3em 6em;
+    @media (max-width:900px) {
+        padding: 1em;
+    }
+    .intro{
+        display: flex;
+        align-items: center;
+        padding: 3em;
+        @media (max-width:900px) {
+            flex-direction: column-reverse;
+            padding: 0;
+        }
+        .social{
+            display: flex;
+            flex-direction: column;
+            margin: 0 2em;
+            font-size: 1.5em;
+            @media (max-width:900px) {
+                flex-direction: row;
+                margin: 2em 0;
+                width: 50%; 
+                justify-content: space-between;
+            }
+        
+            svg{
+                margin: 0.4em 0;
+                color: var(--text-c-active);
+            }
+        }
+        .text-intro{
+            width: 30%;
+            margin-left: 3em;
+            @media (max-width:900px) {
+                width: 80%;
+            }
+            h1{
+                font-size: 3em;
+                font-weight: 600;
+                margin: 0.1em 0;  
+            }
+            h3{
+                font-weight: 600;
+                margin: 1em 0;
+                color: var(--text-c-grey);
+            }
+            p{
+                color: var(--text-c-grey);
+            }
+            button{
+                background-color: var(--text-c-active);
+                font-size: 1em;
+                font-weight: 600;
+                margin-top: 3em;
+                padding: 1em 1.5em;
+                border: none;
+                outline: none;
+                border-radius: 0.5em;
+                color: var(--text-color);
+                border-bottom: 2px solid var(--text-c-grey);
+            }
+            button:active{
+                transform: translateY(1px);
+            }
+        }
+        .image{
+            width: 30%;
+            margin-left: 4em;
+            border-radius: 50%;
+            background-color: #7648e8;
+            overflow: hidden;
+            @media (max-width:900px) {
+                width: 70%;
+                align-self: center;
+                margin: 1em 0;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
