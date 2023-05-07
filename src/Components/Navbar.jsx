@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import "../scss/navbar.scss"      
+import "../scss/navbar.scss"    
+import {BiMenuAltRight} from "react-icons/bi"  
 
 export const Navbar = () => {
   return (
@@ -13,7 +14,7 @@ export const Navbar = () => {
            <Link to={"/blogs"}>Blogs</Link>
            <Link to={"/about"}>About</Link>
           </div>
-          <h3 className="mobile">Menu</h3>
+          <h3 className="mobile"><BiMenuAltRight /></h3>
    </div>
   )
 }

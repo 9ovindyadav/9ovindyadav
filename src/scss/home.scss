@@ -33,6 +33,7 @@
             margin-left: 3em;
             @media (max-width:900px) {
                 width: 80%;
+                margin-top: 1em;
             }
             h1{
                 font-size: 3em;
@@ -60,7 +61,7 @@
                 border-bottom: 2px solid var(--text-c-grey);
             }
             button:active{
-                transform: translateY(1px);
+                transform: translateY(2px);
             }
         }
         .image{
