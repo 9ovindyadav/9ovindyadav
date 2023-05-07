@@ -10,15 +10,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 4em;
+    border: 1px solid wheat;
     @media  (max-width:900px) {
-        padding: 0;
+        padding: 1.5em;
      }
     h3{
         font-size: 1.5em;
         font-weight: 600;
-        @media  (max-width:900px) {
-            font-size: 1em;
-         }
     }
     .menu{
          display: flex;
