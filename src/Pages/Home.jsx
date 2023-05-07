@@ -1,9 +1,11 @@
 import {GrLinkedinOption} from "react-icons/gr"
 import {BsGithub} from "react-icons/bs"
-import {FaTelegramPlane} from "react-icons/fa"
+import {FaTelegramPlane, FaReact,FaHtml5, FaNodeJs, FaSass} from "react-icons/fa"
+import {SiJavascript, SiCss3, SiMongodb, SiFirebase} from "react-icons/si"
 import {AiOutlineDownload} from "react-icons/ai"
 import Photo from "../assets/govind.png"
 import AboutPhoto from "../assets/about.jpg"
+import Resume from "../assets/resume.pdf"
 import "../scss/home.scss"
 
 export const Home = () => {
@@ -28,6 +30,7 @@ export const Home = () => {
       </div>
 
       <About />
+      <Skills />
     </div>
   )
 }
@@ -58,9 +61,52 @@ const About = ()=>{
               <p>Companies worked</p>
               </div>
             </div>
-            <button className="btn">Download resume <AiOutlineDownload /></button>
+            <button onClick={()=>window.open(Resume)} className="btn">Download resume <AiOutlineDownload /></button>
           </div>
         </div>
       </div>
+  )
+}
+
+const Skills = ()=>{
+  return(
+    <div className="skills">
+      <h1>Skills</h1>
+      <p>My tech stacks</p>
+       <div className="tech">
+        <div className="ski">
+          <FaReact color="#14c1db" />
+          <p>React</p>
+        </div>
+        <div className="ski">
+          <FaHtml5 color="#e34f19"/>
+          <p>HTML</p>
+        </div>
+        <div className="ski">
+          <SiCss3 color="#19aae3"/>
+          <p>CSS</p>
+        </div>
+        <div className="ski">
+          <SiJavascript color="#e3c819"/>
+          <p>JavaScript</p>
+        </div>
+        <div className="ski">
+          <FaNodeJs color="#2e822e"/>
+          <p>Node.js</p>
+        </div>
+        <div className="ski">
+          <FaSass color="#d10d4e"/>
+          <p>SASS</p>
+        </div>
+        <div className="ski">
+          <SiMongodb color="#2f6624"/>
+          <p>MongoDB</p>
+        </div>
+        <div className="ski">
+          <SiFirebase color="#deb510"/>
+          <p>Firebase</p>
+        </div>
+       </div>
+    </div>
   )
 }
