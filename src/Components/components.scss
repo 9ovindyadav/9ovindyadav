@@ -1,0 +1,44 @@
+:root{
+    --text-color: white;
+    --text-c-active : #4f368f ;
+    --bg-color : #1d1829 ;
+    --bg-c-active : #2c2245 ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em;
+    @media  (max-width:900px) {
+        padding: 0;
+     }
+    h3{
+        font-size: 1.5em;
+        font-weight: 600;
+        @media  (max-width:900px) {
+            font-size: 1em;
+         }
+    }
+    .menu{
+         display: flex;
+         justify-content: space-between;
+         width: 50%;
+         @media  (max-width:900px) {
+            display: none;
+         }
+        a{
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            padding: 1em;
+        }
+        a:hover{
+            color: var(--text-c-active);
+            
+        }
+        a:active{
+            color: var(--text-c-active);
+        }
+    }
+}
