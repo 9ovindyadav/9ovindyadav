@@ -7,7 +7,7 @@
     top: 0;
     background-color: var(--bg-color);
     @media  (max-width:900px) {
-        padding: 1.5em;
+        padding: 1em 2em;
      }
     h3{
         font-size: 1.5em;
@@ -40,7 +40,37 @@
         display: none;
         @media  (max-width:900px) {
             display: block;
-            font-size: 2em;
+            position: relative;
          }
+         h3{
+            svg{
+                font-size: 2em;
+            }
+            svg:active{
+                transform: scale(0.9);
+            }
+        }
+         .mobile-menu{
+            display:flex;
+            flex-direction: column;
+            border-radius: 2em;
+            background-color: var(--bg-c-active);
+            overflow: hidden;
+            padding: 2em 0;
+            position: absolute;
+            right: 1em
+            
+            
+         }
+         a{
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 1em;
+            width: 10em;
+            text-align: center;
+        }
+        a:active,a:hover{
+            background-color: var(--text-c-active);
+        }
     }
 }
