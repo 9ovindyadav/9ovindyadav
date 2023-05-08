@@ -9,8 +9,16 @@ import AboutPhoto from "../assets/about.jpg"
 import Resume from "../assets/resume.pdf"
 import "../scss/home.scss"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export const Home = () => {
+
+  const navigate = useNavigate();
+
+  const ContactMeButtonHandle = ()=>{
+    navigate("/contact")
+  }
+  
   return (
     <div className="container">
       <div className="intro">
@@ -24,7 +32,7 @@ export const Home = () => {
           <h1>Hi, i am</h1><h1>Govind</h1>
           <h3>Web developer</h3>
           <p>I have a passion for building user friendly web apps that provide an enjoyable and seamless user experience</p>
-          <button>Contact me</button>
+          <button onClick={ContactMeButtonHandle}>Contact me</button>
         </div>
         <div className="image">
           <img src={Photo} alt="Govind" />
@@ -46,9 +54,10 @@ const About = ()=>{
         <div className="main">
           <img src={AboutPhoto} alt="" />
           <div className="text">
-            <p>I have 7.5 years of experience and a deep understanding of various web technologies such as HTML, CSS, JavaScript, TypeScript, Angular, MEAN, Vue.js, and React.
+            <p>I have 1 years of experience and a deep understanding of various web technologies such as HTML, CSS, JavaScript, TypeScript, MERN, React and NEXT.JS.
                I am dedicated to keeping up with the latest trends and techniques in web development, and I am constantly learning and expanding my skill set. I have a keen eye for detail and strive for perfection in every project I work on.
-               When I'm not coding, I enjoy exploring new technologies and work on side projects. I am a sports enthusiast. I play basketball and go to practice regularly. I am also a big football fan and my favourite club is Arsenal.
+               When I'm not coding, I enjoy exploring new technologies and work on side projects. <br /> Outside of work, I enjoy traveling, hiking, and trying new things. Whether it's exploring a new city or trying a new hobby, I'm always eager to step out of my comfort zone and learn something new.
+               <br />Overall, I believe that life is about the journey, not just the destination. I strive to live each day with purpose, curiosity, and a sense of adventure, and I'm excited to see where the journey takes me next."
             </p>
             <div className="expe">
               <div className="years">

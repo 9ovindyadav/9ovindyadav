@@ -12,7 +12,7 @@ export const Navbar = () => {
            <Link to={"/"} className="link">Home</Link>
            <Link to={"/projects"}>Projects</Link>
            <Link to={"/blogs"}>Blogs</Link>
-           <Link to={"/about"}>About</Link>
+           <Link to={"/contact"}>Contact me</Link>
           </div>
           <h3 className="mobile"><BiMenuAltRight /></h3>
    </div>
