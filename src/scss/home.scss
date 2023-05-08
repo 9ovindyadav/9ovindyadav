@@ -108,6 +108,7 @@
             img{
                 width: 40%;
                 object-fit: contain;
+                margin-top: 1.5em;
                 @media (max-width:900px){
                     width: 70%;
                 }

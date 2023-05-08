@@ -64,3 +64,18 @@
         margin-bottom: 1em;
     }
 }
+
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    svg{
+        font-size: 2em;
+        margin-right: 1em;
+    }
+    h1{
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+}

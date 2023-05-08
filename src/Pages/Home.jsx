@@ -61,11 +61,11 @@ const About = ()=>{
             </p>
             <div className="expe">
               <div className="years">
-              <h3>7.5+</h3>
+              <h3>03+</h3>
               <p>Years experience</p>
               </div>
               <div className="years">
-              <h3>20+</h3>
+              <h3>05+</h3>
               <p>Projects Completed</p>
               </div>
               <div className="years">
