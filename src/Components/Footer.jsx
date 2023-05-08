@@ -17,10 +17,10 @@ export const Footer = () => {
           <Link to={"/contact"}>Contact me</Link>
         </div>
         <div className="foot-3">
-           <BsInstagram />
-           <BsYoutube />
-           <BsGithub />
-           <BsLinkedin />
+          <a href="https://linkedin.com/in/govindsvyadav" target="_blank"><BsLinkedin /></a>
+          <a href="https://github.com/9ovindyadav" target="_blank"><BsGithub /></a>
+          <a href="https://www.instagram.com/9ovindyadav" target="_blank"><BsInstagram /></a>
+          <a href="https://www.youtube.com/@9ovindyadav" target="_blank"><BsYoutube /></a>
         </div>
       </div>
       <p>&copy; Govind yadav. All rights reserved</p>

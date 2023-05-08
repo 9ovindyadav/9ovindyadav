@@ -15,9 +15,9 @@ export const Home = () => {
     <div className="container">
       <div className="intro">
         <div className="social">
-          <a href=""><GrLinkedinOption /></a>
-          <a href=""><BsGithub /></a>
-          <a href=""><FaTelegramPlane /></a>
+          <a href="https://linkedin.com/in/govindsvyadav" target="_blank"><GrLinkedinOption /></a>
+          <a href="https://github.com/9ovindyadav" target="_blank"><BsGithub /></a>
+          <a href="https://t.me/govind1726" target="_blank"><FaTelegramPlane /></a>
         </div>
 
         <div className="text-intro">

@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
    <div className="navbar">
           <div className="brand">
-                <h3>Govind yadav</h3>
+                <h3><Link to={"/"}>Govind yadav</Link></h3>
           </div>
           <div className="menu">
            <Link to={"/"} className="link">Home</Link>
