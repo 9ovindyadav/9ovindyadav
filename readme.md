@@ -15,3 +15,4 @@
   - Redux
 - NodeJS 
   - Express js
+- MongoDB
