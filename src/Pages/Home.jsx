@@ -10,6 +10,7 @@ import Resume from "../assets/resume.pdf"
 import "../scss/home.scss"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { Animate } from "./Animate"
 
 export const Home = () => {
 
@@ -20,7 +21,8 @@ export const Home = () => {
   }
   
   return (
-    <div className="container">
+    <>
+    <div className="container area">
       <div className="intro">
         <div className="social">
           <a href="https://linkedin.com/in/govindsvyadav" target="_blank"><GrLinkedinOption /></a>
@@ -43,6 +45,8 @@ export const Home = () => {
       <Skills />
       <Qualification />
     </div>
+   
+    </>
   )
 }
 
