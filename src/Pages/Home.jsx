@@ -10,7 +10,6 @@ import Resume from "../assets/resume.pdf"
 import "../scss/home.scss"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { Animate } from "./Animate"
 
 export const Home = () => {
 
