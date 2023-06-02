@@ -31,7 +31,7 @@ export const Contact = () => {
       <div className="details-group">
         {
           details.map(({logo,title,info})=>(
-            <Detail title={title} logo={logo} info={info}/>
+            <Detail key={title} title={title} logo={logo} info={info}/>
           ))
         }
       </div>

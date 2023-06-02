@@ -5,6 +5,8 @@
     height: 100%;
     overflow: hidden;
     z-index: -1;
+    position: fixed;
+    top: 0;
 }
 
 .circles li{
@@ -13,7 +15,7 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: #a5b4fc;
     animation: animate 25s linear infinite;
     bottom: -150px;
     
