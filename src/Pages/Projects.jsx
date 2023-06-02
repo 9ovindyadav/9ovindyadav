@@ -22,8 +22,8 @@ const Project = ({title,repo_url,live_url})=>{
   return (
     <div className="project">
       <h3>{title}</h3>
-      <p>Reposotpry : <a href={repo_url} target="blank">{repo_url ? "Link" : ""}</a></p>
-      <p>Live Projects : <a href={live_url} target="blank">{live_url ? "Link" : ""}</a></p>
+      <a href={repo_url} target="blank">{repo_url ? <button>Repository</button> : ""}</a>
+      <a href={live_url} target="blank">{live_url ? <button>Live project</button> : ""}</a>
     </div>
   )
 }

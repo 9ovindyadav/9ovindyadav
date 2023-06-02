@@ -49,4 +49,19 @@ h1{
             color: white;
         }
     }
+
+    button{
+        padding: 0.5em 2em;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid var(--text-color);
+        color: var(--text-color);
+        border-radius: 2em;
+        margin-right: 2em;
+        background-color: transparent;
+    }
+    button:active{
+        transform: scale(0.9);
+    }
 }
+
