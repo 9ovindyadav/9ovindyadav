@@ -7,6 +7,7 @@ import { Projects } from './Pages/Projects'
 import { Blogs } from './Pages/Blogs'
 import { Contact } from './Pages/Contact'
 import { NotFound } from './Pages/NotFound'
+import { Animate } from './Pages/Animate'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path='/contact' element={<Contact />}/>
             <Route path='*' element={<NotFound />}/>
         </Routes>
+        <Animate/>
         <Footer />
    </BrowserRouter>
   )

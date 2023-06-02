@@ -9,7 +9,7 @@ export const Blogs = () => {
         {
           blogs.map(({title,url,author}) =>(
         
-            <Blog title={title} url={url} author={author}/>
+            <Blog key={url} title={title} url={url} author={author}/>
           ))
         }
       </div>

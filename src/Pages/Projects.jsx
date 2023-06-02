@@ -10,7 +10,7 @@ export const Projects = () => {
         {
           projects.map(({title,repo_url, live_url}) =>(
         
-            <Project title={title} repo_url={repo_url} live_url={live_url}/>
+            <Project key={repo_url} title={title} repo_url={repo_url} live_url={live_url}/>
           ))
         }
       </div>
