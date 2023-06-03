@@ -50,15 +50,19 @@ h1{
         }
     }
 
+    div{
+        display: flex;
+    }
     button{
-        padding: 0.5em 2em;
+        padding: 0.7em 1.5em;
         cursor: pointer;
         outline: none;
         border: 1px solid var(--text-color);
         color: var(--text-color);
         border-radius: 2em;
-        margin-right: 2em;
         background-color: transparent;
+        margin-right: 1em;
+        
     }
     button:active{
         transform: scale(0.9);
