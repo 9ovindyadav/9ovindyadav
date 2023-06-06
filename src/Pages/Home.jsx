@@ -152,14 +152,14 @@ function QualificationData({ show }) {
         <div className="work">
           <DataQueLeft position={"Sales Executive"} company={"Sterling Solutions"} year={"2019"} />
           <DataQueRight position={"DEO & Pro-coord"} company={"P5L"} year={"2020-2022"} />
-          <DataQueLeft position={"Digital Marketing"} company={"Sanskar Sarees"} year={"2022"} />
-          <DataQueRightLast position={"DEO"} company={"BRFL"} year={"2022-2023"} />
+          <DataQueLeftLast position={"Web developer"} company={"Sanskar Sarees"} year={"2022-2023"} />
         </div>
       )}
       {show === 2 && (
         <div className="education">
           <DataQueLeft position={"10th"} company={"Pal Rajendra"} year={"2014-2015"} />
-          <DataQueRightLast position={"HSC, Science"} company={"Shree Raghuveer"} year={"2015-2017"} />
+          <DataQueRight position={"HSC, Science"} company={"Shree Raghuveer"} year={"2015-2017"} />
+          <DataQueLeftLast position={"Btech"} company={"Gulzar group of institutes"} year={"2017-2020"} />
         </div>
       )}
     </>
