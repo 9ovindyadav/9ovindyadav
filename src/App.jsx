@@ -8,6 +8,7 @@ import { Blogs } from './Pages/Blogs'
 import { Contact } from './Pages/Contact'
 import { NotFound } from './Pages/NotFound'
 import { Animate } from './Pages/Animate'
+import { Social } from './Pages/Social'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path='/projects' element={<Projects />}/>
             <Route path='/blogs' element={<Blogs />}/>
             <Route path='/contact' element={<Contact />}/>
+            <Route path='/social' element={<Social/>}/>
             <Route path='*' element={<NotFound />}/>
         </Routes>
         <Animate/>
