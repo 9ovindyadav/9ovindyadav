@@ -6,13 +6,13 @@
 - HTML
 - CSS
 - JavaScript
-- C++
+- PHP
+- SQL
 
 ## Tools and Frameworks
 - Git & Github
 - VScode
 - ReactJS
-  - Redux
 - NodeJS 
-  - Express js
 - MongoDB
+- MySQL
