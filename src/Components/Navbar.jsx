@@ -22,6 +22,7 @@ export const Navbar = () => {
            <Link to={"/"}>Home</Link>
            <Link to={"/projects"}>Projects</Link>
            <Link to={"/blogs"}>Blogs</Link>
+           <Link to={"/social"}>Social</Link>
            <Link to={"/contact"}>Contact me</Link>
           </div>
          <div className="mobile">
@@ -40,6 +41,7 @@ const MobileMenu = ({menu,setMenu})=>{
       <Link to={"/"} onClick={()=>setMenu(false)}>Home</Link>
       <Link to={"/projects"} onClick={()=>setMenu(false)}>Projects</Link>
       <Link to={"/blogs"} onClick={()=>setMenu(false)}>Blogs</Link>
+      <Link to={"/social"} onClick={()=>setMenu(false)}>Social</Link>
       <Link to={"/contact"} onClick={()=>setMenu(false)}>Contact me</Link>
      </div>) : null
     }
